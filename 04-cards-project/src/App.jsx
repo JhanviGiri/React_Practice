@@ -6,20 +6,19 @@ const App = () => {
     <div className='parent'>
       <div className='card'>
 
+<div>
         <div className="top">
-          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPjeZ-FjJ-FHOMlVO9c1ZtEPo8ypuNnRN1uCMugVyyA&s=10' alt='Logo'></img>
+          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMza-4WthdR-Chpw-GxQmXjYcuN7-rS8V5gKoJFMlC-A&s=10' alt='Logo'></img>
           <button>Save <Bookmark size={18} /></button>
         </div>
 
         <div className="centre">
-          <h2>Amazon</h2>
-          <span>5 days ago</span>
+          <h2>Amazon  <span>5 days ago</span> </h2>
           <h3>Senior full stack developer</h3>
         
-        <div>
-          <h3>Part-Time</h3>
-          <h3>Senior-level</h3>
-          <h3>Remote</h3>
+        <div className="tag">
+          <h4>Part-Time</h4>
+          <h4>Senior-level</h4>
           </div>
         </div>
 
@@ -30,7 +29,7 @@ const App = () => {
           </div>
           <button>Apply Now</button>
         </div>
-
+</div>
       </div>
     </div>
   )
