@@ -1,0 +1,18 @@
+/******NOTE - query for when button is clicked ************/
+
+var a = document.querySelector('h1)
+
+
+/***********Seperate Function**************/
+
+function hello(){
+    console.log('Hello Guys);
+}
+a.addEventListener('click',hero);
+
+
+/*******Function within calling************/
+
+a.addEventListener('click', function(){
+    console.log('Good Morning');
+})
