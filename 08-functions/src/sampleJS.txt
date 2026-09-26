@@ -16,3 +16,4 @@ a.addEventListener('click',hero);
 a.addEventListener('click', function(){
     console.log('Good Morning');
 })
+

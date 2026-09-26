@@ -28,6 +28,8 @@ const App = () => {
     <div>
 
       
+    <h1>Hello!</h1>
+    
      <div onWheel={(elem) =>{
       // console.log(elem.deltaY);
       
@@ -39,7 +41,6 @@ const App = () => {
     <div className='page3'></div>
      </div>
     
-      <h1>Hello!</h1>
 
       {/* <button onClick={btnClicked}>Click</button> */}
       {/* <button onDoubleClick={btnClicked}>Click Here</button>
