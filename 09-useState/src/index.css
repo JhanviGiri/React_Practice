@@ -18,5 +18,16 @@ button{
   padding: 10px;
   font-size: 20px;
   background-color: rgb(166, 165, 165);
+  color: #111;
+  border-radius: 20px;
+}
 
+h1{
+    background-color: gainsboro;
+    width: fit-content;
+    padding: 10px 50px;
+    margin: 50px;
+    font-size: 60px;
+    color: #111;
+    border-radius: 20px;
 }
