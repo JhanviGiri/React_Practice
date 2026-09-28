@@ -1,0 +1,21 @@
+->> Everytime we use tailwind CSS we have to download it in every project with the below 
+command
+
+npm install tailwindcss @tailwindcss/vite
+
+->> also you have to add this in vite.config.js :
+   export default defineConfig({
+  plugins: 
+  [
+    react(), 
+    tailwindcss(),
+  ],
+})
+
+
+->> in index.CSS add :
+        @import "tailwindcss";
+
+
+->> in main.jsx add :
+   import './index.css'
