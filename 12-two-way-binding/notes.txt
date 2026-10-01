@@ -1,0 +1,23 @@
+
+In two-way binding you don't do anything by yourself instead you asked react to do it for you. In this when we
+  type something in placeholder the onChange func will run then it will call/change the value of setTile. If setTitle value
+  is changing then title value is also changing which is further store in 'value' then it will show on the screen/site 
+  this is how two-way binding works and is working in this project
+  
+  
+***IMP - Basically instead of doing anything by yourself you are asking to DOM for it
+  
+  
+  >> We have created prevent default so that whenever we will click on submit button and the page is trying to refresh, we will prevent 
+  the refreshing of page.
+  
+  
+  >> We have then initialized the setTitle, an empty string at the end of the function because we don't want to see the value which is 
+  already submitted. So, for refreshing, we can say we are assigning a new empty value to the setTitle, which will then change the 
+  value of the title. Then it will show on the placeholder. If we are initializing it on an empty string, then it will show empty 
+  string after you have entered a particular name or value in the placeholder and then submitted.
+  
+  >> So in onChange function, whenever we are trying to type a value, it will reflect on the console. And we have used e.target.value 
+  because e is the element which will show any event happening inside the placeholder. Then we have used target, so it can show where 
+  the when we are writing in the placeholder, where it is targeting, such as input tag. Then the value is for showing whatever value we 
+  are typing in the placeholder on the console.
