@@ -24,7 +24,13 @@ const submitHandler = (e) => {
   setDetails('')
 }
 
+const deleteNote = (idx) =>{
+  const copyTask = [...task];
+ // console.log(copyTake[idx])
 
+ copyTask.splice(idx, 1)
+ setTask(copyTask)
+}
 
   return (
     <div className='h-screen lg:flex bg-black text-white'>
@@ -72,14 +78,26 @@ const submitHandler = (e) => {
     <h1 className='text-4xl font-bold'>Your Notes</h1>
     
     
-    <div className='flex flex-wrap gap-5 mt-5 h-full overflow-auto'>
+    <div className='flex flex-wrap items-start justify-start gap-5 mt-5 h-[90%] overflow-auto'>
     
     {task.map(function(elem, idx){
-      return  <div key={idx} className='h-52 w-40 text-black p-5 rounded-2xl bg-white'>
-      <h2 className='leading-tight text-xl font-bold'>{elem.title}</h2>
-      <p>{elem.details}</p>
-      </div>
-    })}
+     return <div key={idx} className=" flex justify-between flex-col items-start relative h-52 w-40 bg-cover rounded-xl text-black pt-9 pb-4 px-4 bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')]">
+      
+    <div>
+    
+    <h3 className='leading-tight text-lg font-bold'>{elem.title}</h3>
+    
+    <p className='mt-2 leading-tight text-xs font-semibold text-gray-600'>{elem.details}</p>
+    </div>
+    
+    <button onClick={() => {
+                deleteNote(idx)
+              }}  
+    className='w-full cursor-pointer active:scale-95 bg-red-400 active:bg-red-600 py-1 text-xs rounded font-bold text-white'>Delete</button>
+    </div>
+
+
+  })}
 
 
     {/* <div className='h-52 w-40 rounded-2xl bg-white'></div>

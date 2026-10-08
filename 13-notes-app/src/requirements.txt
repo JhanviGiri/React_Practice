@@ -1,0 +1,28 @@
+** download lucide-icons : 
+npm install lucide-react
+
+** to download tailwind :
+
+1.  In src/index.css
+->  @import "tailwindcss";
+
+2.  Install Tailwind
+->  npm install tailwindcss @tailwindcss/vite
+
+3.  Open vite.config.js 
+
+->
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
+})
+
+4.  src/index.css
+    @import "tailwindcss";
